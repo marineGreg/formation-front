@@ -50,24 +50,40 @@
         |   de sa demande de contact.                      |
         |                                                  |
         ------------------------------------------------- */
-    $(function() {
-        $('#MonFormulaire').on('submit', function(e) {
-        // -- Stopper la redirection du submit
-        e.preventDefault();
 
-            let fullname    = $('#fullname');
-            let email       = $('#email');
-            let tel         = $('#tel');
-            let sujet       = $('#sujet');
-            let message     = $('#message');
+        // -- 1. Attente que le DOM soit chargé !
+        $(function() {
 
-        // -- Cacher le formulaire, puis initier après ce formulaire un <p> contenant un message de bienvenue et la valeur entrée dans le champ input id nomcomplet
+            // -- 2. Ecouter l'évènement "submit" du Formulaire
+            $('#MonFormulaire').submit(function(event) {
 
-        $(this).replaceWith("<p>Merci <strong>" + fullname.val() + " </strong>! Voici le récapitulatif de votre demande de contact :</p><br><p>Votre email : " + email.val() + "<br> Votre numéro de téléphone : " + tel.val() + "</p><br> <p><strong> Sujet : " + sujet.val() + "</strong><br> Votre message : " + message.val() );
+                // -- 3. Stopper l'envoi du Formulaire
+                event.preventDefault();
 
+                // -- 4. Récupération des informations
+                let fullname    = $('#fullname').val();
+                let email       = $('#email').val();
+                let tel         = $('#tel').val();
+                let sujet       = $('#sujet').val();
+                let message     = $('#message').val();
+
+                // -- 5. Récapitulatif
+                $(this).replaceWith(`
+                    <p>
+                        Bonjour <strong>${fullname}</strong>
+                        <em> ( ${email} ) </em> <br><br>
+                        Vous nous avez contacté au sujet de : <strong>${sujet}</strong>.<br>
+                        Nous reviendrons vers vous dans les plus brefs délais au 
+                        <strong>${tel}</strong><br><br>
+                        <u>Ci-dessous votre message :</u><br>
+                        ${message}
+                    </p>
+                `);
+
+            }); 
 
         });
-    });
+
     </script>
 </body>
 </html>
