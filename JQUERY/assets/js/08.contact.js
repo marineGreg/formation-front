@@ -3,26 +3,29 @@ $(function() {
 
 // -- Déclaration de Variables
 var CollectionDeContacts = [];
-console.log(CollectionDeContacts);
+var unContact = {};
+var nom = $('#nom').val();
+var prenom = $('#prenom').val();
+var email = $('#email').val();
+var tel = $('#tel').val();
 
 /* --------------------------------------------------------------
                     DECLARATION DES FONCTIONS
 -------------------------------------------------------------- */
 
 // -- Fonction ajouterContact(Contact) : Ajouter un Contact dans le tableau de Contacts, mettre à jour le tableau HTML, réinitialiser le formulaire et afficher une notification.
-@param {*} Contact
 
-function ajouterContact(Contact) {
+function ajouterContact(unContact) {
 
-  CollectionDeContacts.push(Contact);
+  CollectionDeContacts.push(unContact);
   $(`
       <tr>
-          <td>` + Contact.nom + `</td>
-          <td>${ Contact.prenom }</td>
-          <td>${ Contact.email }</td>
-          <td>${ Contact.tel }</td>
+          <td>` + unContact.nom + `</td>
+          <td>${ unContact.prenom }</td>
+          <td>${ unContact.email }</td>
+          <td>${ unContact.tel }</td>
       </tr>
-    `).appendTo($('#LesContacts > tbody'));
+    `).appendTo($('#LesContacts'));
 
 }
 
@@ -35,32 +38,27 @@ function reinitialisationDuFormulaire() {
 //         function afficheUneNotification() {}
 
 // -- Vérification de la présence d'un Contact dans Contacts
-@param {*} Contact
 
-function estCeQunContactEstPresent(email) {
-  // -- Booleen qui indique la présence d'un contact dans ma collection
+function estCeQunContactEstPresent(unEmail) {
+  // -- Booleen qui indique la présence d'un contact dans les Contacts
         let estPresent = false;
 
         // -- On parcourt le tableau à la recherche d'une correspondance
         for(let i = 0 ; i < CollectionDeContacts.length ; i++) {
 
-            if(Contact.email === CollectionDeContacts[i].email) {
-                // -- Si une correspondance est trouvé "estPresent" passe à VRAI (true)
+            if(unContact.email === CollectionDeContacts[i].email) {
+                // -- Si une correspondance est trouvé estPresent passe en true
                 estPresent = true;
-                // -- On arrête la boucle, plus besoin de poursuivre.
-                break;
+                break; // -- On arrête la boucle
             }
 
         }
-
         // -- On retourne le booleen
         return estPresent;
-
 }
 
 // -- Vérification de la validité d'un Email
 // : https://paulund.co.uk/regular-expression-to-validate-email-address
-@param {*} email
 
 function validateEmail(email){
   var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
@@ -68,8 +66,6 @@ function validateEmail(email){
 }
 
 // -- Vérification de la validité d'un Télephone
-
-@param {*} tel
 
   var validateTel = tel => {
   var telReg = new RegExp("(0|\\+33|0033)[1-9][0-9]{8}");
@@ -132,18 +128,18 @@ if (!MonFormulaireEstValide) {
   }
 
 // -- Observons dans la console
-console.log(Contact.nom);
+console.log(unContact);
 
 // -- Vérification avec EstCeQunContactEstPresent
 
-if (estCeQunContactEstPresent(Contact)){
+if (estCeQunContactEstPresent(unContact)){
   alert('Attention, ce contact existe déjà.');
   reinitialisationDuFormulaire();
 }
 
 // -- Ajout du Contact
   else {
-    ajouterContact(Contact);
+    ajouterContact(unContact);
   }
 
   });
