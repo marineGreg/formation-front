@@ -70,15 +70,15 @@
 
     <main>
         <input type="text" placeholder="Saisissez un terme à surligner..." id="markJS">
-        <section>
+    <!--<section>
             <header>
                 <h1>TITRE</h1>
             </header>
             <article>
                 MON CONTENU
             </article>
-        </section>
-    </main>
+        </section> -->
+    </main> 
    
     <!-- Intégration de jQuery -->
     <script
@@ -95,28 +95,30 @@
         $(function() {
             $.getJSON('https://jsonplaceholder.typicode.com/posts', function(data) {
                 
-                console.log(data[0]);
-                console.log(data[0].title);
-                console.log(data[0].body);
-                var data = [];
-                
                 for(let i = 0 ; i < 10 ; i++) {
                     console.log(data[i]);
 
-            $(`
-                ${data[i].title}
-            `).appendTo('header');
+                    $(`
+                        <section>
+                            <header>
+                                <h1>${data[i].title}</h1>
+                            </header>
+                            <article>
+                                ${data[i].body}
+                            </article>
+                        </section>
+                    `).appendTo($('main'));
+                
+                } //-- end boucle for
+            
+            }); //-- end JSON
 
-            $(`
-                ${data[i].body}
-            `).appendTo('article');
-
-                }
-            }); 
+           $('#markJS').on('input', function() {
+               let keyword = $(this).val();
+               $('main').unmark().mark(keyword);
+           });
 
         }); // end jQuery
-
     </script>
-
 </body>
 </html>
