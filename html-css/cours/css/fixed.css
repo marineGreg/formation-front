@@ -1,0 +1,26 @@
+#contenu {
+    width: 900px;
+    border: 1px solid;
+    margin: 50px auto 0;
+    padding: 20px;
+    text-align: justify;
+}
+
+nav {
+    background: lightsteelblue;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 3%;
+}
+
+.sidebar{
+    width: 200px;
+    height: 100%;
+    background: lightpink;
+    position: fixed;
+    top: 5%;
+    left: 0;
+}

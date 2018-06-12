@@ -1,0 +1,44 @@
+main {
+    width: 1200px;
+    margin: 60px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6em;
+    padding: 20px;
+}
+
+header span, footer span {
+    font-weight: bold;
+    color: navy;
+    position: relative;
+    cursor: default;
+}
+article {
+    box-shadow: 6px 6px 6px lightsteelblue;
+    border: 1px solid lightsteelblue;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.info-uti, .com{
+    box-shadow: 4px 4px 4px steelblue;
+    padding: 10px;
+    border: 1px solid;
+    display: none;
+}
+
+header span:hover .info-uti {
+    display:block;
+    position: absolute;
+    background: white;
+    top: -80px;
+    left: 90px;
+}
+
+footer span:hover .com {
+    display:block;
+    position: absolute;
+    background: white;
+}

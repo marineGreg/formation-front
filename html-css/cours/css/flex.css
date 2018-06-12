@@ -1,0 +1,35 @@
+#conteneur { /* j'ai créé un conteneur mais j'aurai aussi bien pu utiliser le body */
+    height: 450px;
+    border: 1px solid;
+} /* les 4 propriétés suivantes sont indissociables les unes des autres afin d'obtenir un centrage parfait des éléments enfants */
+
+#flex { 
+    /* 1 */ height: 100%; /* soit en 100% ou récupéré de la hauteur de la div parent */
+    /* 2 */ display: flex; /* ne pas oublier les webkits, moz...*/
+    /* 3 */ align-items: center; /* propriété qui sera attribuée aux éléments enfants devenus éléments de type flex-item. /!\ si on souhaite par exemple créer 2 "mazone", ceux-ci se retrouveront l'un à côté de l'autre. on ne pourra pas leur attribuer de display: block puisque nous ne sommes pas en face d'élements de type inline ou block. "mazone" seront de type "flex-item".
+    align-items: center; --> permet de centrer verticalement des éléments de type "flex-items" */
+    /* 4 */ justify-content: space-evenly; /* permet de placer horizontalement (center) ou de manière spécifique (space-between, space-around, space-evenly) un élément de type flex-items */
+    /* /!\ Par défaut un élément de type flex sera de type "flex-start" si le justify-content n'est pas spécifié */
+
+    /* Par défaut, un flex a pour direction row (en ligne), si vous souhaitez le faire passer en colonne, vous pourrez utiliser un "flex-direction: column". il est par ailleurs possible de modifier l'ordre à l'aide de "flex-direction: column-reverse". (row-reverse existe également) */
+}
+
+#flex2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.mazone {
+    background: lightcoral;
+    width: 500px;
+    height: 250px;
+}
+
+.mazone2 {
+    background: lightseagreen;
+    width: 500px;
+    height: 250px;
+}

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+    font-size: 1em;
+}
+
+/* Attrape l'élément ayant comme class ".titi" et cherche à l'intérieur de celui-ci le span pour le personnaliser */
+.titi span {
+    background: lightgreen;
+    font-weight: bold;
+}
+
+/* Attrape l'élément ayant comme class ".toto" et cherche à l'intérieur de celui-ci le span pour le personnaliser */
+.toto span {
+    background: lightblue;
+    font-weight: bold;
+}
+
+h1 {
+    background: lightgrey;
+    color: navy;
+}
+/* Attrape l'élément ayantla balise h1 et cherche à l'intérieur de celui-ci le ou les span pour les personnaliser */
+h1 span {
+    color: red;
+}
+/* Attrape l'élément ayantla balise h1 et cherche à l'intérieur de celui-ci le ou les span ayant la class ".test1" pour les personnaliser */
+h1 span.test1 {
+    color: yellow;
+}
+h1 span.test2 {
+    color: blueviolet;
+}
+h1 span.test3 {
+    color: lightcoral;
+}
+h1 span.test4 {
+    color: teal;
+}
+
+/* -------------------- */
+
+/* Attrape l'élément ayant comme class ".shadowbox" pour le personnaliser */
+.shadowbox {
+    width: 20em;
+    border: 2px solid;
+    border-color: lightsteelblue;
+    padding: 8px 12px;
+    box-shadow: 7px 7px 5px lightsteelblue;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+

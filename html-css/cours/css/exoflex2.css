@@ -1,0 +1,48 @@
+header {
+    height: 120px;
+    background: teal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    background: teal;
+    height: 70px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.right {
+    background: teal;
+    height: 70px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo {
+    background: lightcoral;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.right1, .right2, .right3 {
+    background: lightcoral;
+    width: 60px;
+    height: 30px;
+    margin: 5px;
+}
+
+.slogan {
+    background: lightcoral;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+}

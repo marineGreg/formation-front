@@ -1,0 +1,30 @@
+/* Conteneur principal faisant 600px par 600px et centré sur la page*/
+.carre {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid steelblue;
+}
+
+/* ici on défini le comportement flottant à gauche de chaque div et on attribue également leur taille en largeur et hauteur */
+.d1, .d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9, .d10 {
+    float: inherit;
+    width: 73px;
+    height: 73px;
+    text-align: center;
+    border: 1px solid lightsteelblue;
+}
+
+/* ici on récupère nos 4 blocs principaux afin de les faire s'afficher 2 par 2 par ligne */
+.bloc1, .bloc2, .bloc3, .bloc4 {
+    float: left;
+}
+
+/* ici on modifie le dessin du bloc2 et bloc4, afin que l'effet flottant se fasse de droite à gauche et non de gauche à droite.*/
+.bloc2, .bloc4 {
+    float: right;
+}
+
+.clear {
+    clear: both; /* both left and right --> propriété css utilisée à l'aide d'une class .clear afin de forcer le retour à la ligne si nécessaire */
+}

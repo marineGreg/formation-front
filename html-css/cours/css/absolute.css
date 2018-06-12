@@ -1,0 +1,49 @@
+p{
+    margin: 40px 20px;
+    text-align: justify;
+    box-shadow: 6px 6px 6px lightsteelblue;
+    padding: 5px;
+}
+.orange { 
+    color:purple;
+    top: 1%;
+    left: 80%;
+    font-weight: bold;
+    position: absolute;
+}
+
+.text1, .text2, .text3 {
+    width: 1000px;
+    height: 270px;
+    position: relative;
+}
+
+.retour {
+    width: 150px;
+    height: 20px;
+    background: steelblue;
+    color: white;
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+li.news { 
+    position: relative;
+}
+
+.news-block {
+    background: lightsteelblue;
+    width: 100px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid;
+    position: relative;
+    top: 30px;
+    left: -50px;
+}

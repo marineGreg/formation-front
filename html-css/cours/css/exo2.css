@@ -1,0 +1,53 @@
+body {
+    width: 1000px;
+    border: 2px solid black;
+    margin: 0 auto; /* centré dans la page */
+}
+
+header {
+    height: 80px;
+    background: teal;
+}
+
+nav {
+    height: 30px;
+    background: purple;
+}
+
+section {
+    height: 500px;
+    padding: 20px; /*on peut mettre en margin ou padding pour avoir le même résultat */
+}
+
+footer {
+    height: 60px;
+    background: teal;
+}
+
+.a, .b, .c, .d {
+    width: 480px;
+    height: 250px;
+    float: left;
+}
+
+.a {
+    background: indigo;
+}
+
+.b {
+    background: lightcoral;
+}
+
+.c {
+    background: lightseagreen;
+}
+
+.d {
+    background: lightgoldenrodyellow;
+}
+
+/* Si j'écris ".a.block", cela signifie que l'élément possède deux class
+Retour html : <div class="a block"> */
+
+/* Si j'écris ".a .block, cela signifie que l'élément ".block" est à l'intérieur d'un élément ".c1".
+Retour html : <div class="a"><div class="block"></div></div> */

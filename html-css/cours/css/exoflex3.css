@@ -1,0 +1,64 @@
+header {
+    background: teal;
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    height: 70px;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+
+.top {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle {
+    background: indigo;
+    height: 50px;
+    margin: 10px;
+}
+
+.bottom {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    background: lightcoral;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.slogan {
+    background: lightcoral;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+}
+
+.rightmenu {
+    background: lightcoral;
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+}
+
+.acc, .hist, .cont, .more {
+    background: lightcoral;
+    width: 70px;
+    height: 20px;
+    margin: 15px;
+}

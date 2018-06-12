@@ -1,0 +1,48 @@
+/* Nous cassons (reset) l'effet d'héritage pour toutes les balises susceptibles d'être concernées */
+html, body, div, span, applet, objet, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+ 
+}
+
+/* En faisant un reset, on ne nous impose rien. Ensuite, rien ne nous empêche de définir notre propre style et d'être maître de nos choix */
+
+h1 {
+    text-align: center; /* alignement */
+    font-size: 20px; /* taille du texte */
+    font-weight: bold; /* type de texte */
+    margin: 10px 9px 8px 7px; /* marges extèrieures */
+    padding: 20px; /* marges intèrieures */
+    border: 1px solid;/* bordure */
+}
+
+span { /* En ajoutant une bordure dans la feuille css, nous constatons que cet élément ne prend que la place dont il a besoin, on dit qu'il est display : inline */
+    border: 1px solid;
+    text-align: center; /* /!\ l'alignement ne peut pas fonctionner car span est par défaut display inline - il est possible de lui ajouter la propriété display: block; afin de remédier au problème */
+    margin: 10px 0;
+    width: 100px; /* /!\ l'alignement ne peut pas fonctionner car span est par défaut display inline - il est possible de lui ajouter la propriété display: block; afin de remédier au problème */
+}
+
+div { /* En ajoutant une bordure dans la feuille css, nous constatons que cet élément prend toute la place en largeur, on dit qu'il est display block */
+    border: 1px solid;
+    margin: 10px 0;
+}
+
+p { /* En ajoutant une bordure dans la feuille css, nous constatons que cet élément prend toute la place en largeur, on dit qu'il est display block */
+    border: 1px solid;
+    margin: 10px 0;
+}
+
+/*
+Commentaire : certains éléments sont display block, d'autres sont display inline.
+
+---------------------------
+
+MARGIN/PADDING :
+    margin/padding : 10px 9px 8px 7px --> 10px en haut, 9px à droite, 8px en bas, 7px à gauche
+    margin/padding : 10px 9 px 8 px --> 10px en haut, 9px à droite, 8px en bas (et donc également 9px à gauche)
+    margin/padding : 10px; 10px tout autour (haut droite bas gauche)
+    padding-top/margin-top : 10px; top en haut
+    padding-right/margin-right : 10px; right à droite
+    padding-bottom/margin-bottom : 10px; bottom en bas
+    padding-left/margin-left : 10px; left à gauche
+
+---------------------------

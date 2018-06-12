@@ -1,0 +1,20 @@
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+body .bleu {
+background-color: red;
+}
+html .bleu {
+background-color: lightsteelblue;
+}
+
+/* espace entre deux class --> il faut que ce soit l'enfant de la class
+  pas d'espace entre deux class --> il faut que ce soit la class de l'autre class */
+
+  .bordure {
+    border: 3px solid orange;
+  }

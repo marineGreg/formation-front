@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/float.css" />
+</head>
+<body>
+    <!-- 
+        float : est une méthode de positionnement, elle permet de placer les éléments en les rendant flottants, afin de pouvoir les placer soit à la suite, soit à des endroits différents.
+    -->
+    <div class="carre">
+        <div class="bloc1">
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="d4"></div>
+            <div class="clear"></div>
+            <div class="d5"></div>
+            <div class="d6"></div>
+            <div class="d7"></div>
+            <div class="clear"></div>
+            <div class="d8"></div>
+            <div class="d9"></div>
+            <div class="clear"></div>
+            <div class="d10"></div>
+        </div>  
+
+        <div class="bloc2">
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="d4"></div>
+            <div class="clear"></div>
+            <div class="d5"></div>
+            <div class="d6"></div>
+            <div class="d7"></div>
+            <div class="clear"></div>
+            <div class="d8"></div>
+            <div class="d9"></div>
+            <div class="clear"></div>
+            <div class="d10"></div>
+        </div>  
+
+        <div class="bloc3">
+            <div class="d1"></div>
+            <div class="clear"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="clear"></div>
+            <div class="d4"></div> 
+            <div class="d5"></div>
+            <div class="d6"></div>
+            <div class="clear"></div>
+            <div class="d7"></div>
+            <div class="d8"></div>
+            <div class="d9"></div>
+            <div class="d10"></div>
+            </div>  
+
+        <div class="bloc4">
+            <div class="d1"></div>
+            <div class="clear"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="clear"></div>
+            <div class="d4"></div> 
+            <div class="d5"></div>
+            <div class="d6"></div>
+            <div class="clear"></div>
+            <div class="d7"></div>
+            <div class="d8"></div>
+            <div class="d9"></div>
+            <div class="d10"></div>
+        </div> 
+    </div>
+    <!--
+        Dans l'exemple ci-dessus, on a créé un conteneur englobant 4 conteneurs enfants, eux même parents de div formant un dessin. 
+        Pour le dessin, afin de forcer le retour à la ligne de l'effet flottant, j'ai utilisé une div avec une class ".clear" sur laquelle je vais appliquer une propriété CSS permettant l'annulation de l'effet flottant "clear: both"
+
+        Par défaut, avant l'utilisation du .clear, je possédais 10 div l'une à côté de l'autre car elles possèdaient toutes la propriété css "float: left", qui va permettre de mettre sur la même ligne des éléments l'un après l'autre, alors que par défaut, ils étaient l'un en dessous de l'autre.
+        Grâce au "clear: both", nous avons eu un retour à la ligne.
+
+        "left" ou "right" en valeur de propriété FLOAT permet de définir la direction dans laquelle on souhaite afficher les éléments
+        
+        A partir du moment où il y a trop d'éléments par rapport à la taille du conteneur, les éléments "en trop" passeront automatiquement à la ligne
+
+        Afin de pouvoir positionner correctement mes 4 blocs, .bloc1, .bloc2, .bloc3 et .bloc4, j'ai utilisé un FLOAT left, permettant de faire afficher 2 blocs ligne, car j'ai défini une valeur sur le dessin permettant seulement la possibilité d'afficher deux blocs sur une ligne
+    -->
+</body>
+</html>

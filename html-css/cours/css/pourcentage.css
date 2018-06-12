@@ -1,0 +1,9 @@
+.taillefixe {
+    width: 1000px;
+    border: 2px solid lightcoral;
+}
+
+.taillevariable {
+    width: 100%;
+    border: 2px solid lightseagreen;
+}

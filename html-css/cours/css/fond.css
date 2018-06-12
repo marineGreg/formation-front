@@ -1,0 +1,84 @@
+body {
+    background: #000000 url(../img/black-hole.jpg) no-repeat;
+    background-size: cover; /* cover en CSS permet de couvrir tout l'écran, il s'agit d'un fond extensible, peu importe la taille et la résolution */
+    background-attachment: fixed;
+}
+/* Version avec RGBA (opacité du contenu non altérée) */
+.contenu {
+    background-color: rgba(255, 255, 255, 0.3); /*  --> Mieux que opacity car cea n'attenue pas la couleur du texte */
+    width: 800px;
+    height: 170px;
+    margin: 150px auto 0;
+    padding: 10px;
+}
+
+ /* Version avec opacity (contenu altéré) */
+.contenu2 {
+    background-color: #ffffff;
+    opacity: 0.3;
+    width: 800px;
+    height: 170px;
+    margin: 100px auto 0;
+    padding: 10px;
+}
+
+p {
+    position: relative;
+    top: 10%;
+    text-align: justify;
+}
+
+.contenu3 {
+    background: lightseagreen;
+    background: radial-gradient(lightseagreen, indigo);
+    width: 800px;
+    height: 170px;
+    margin: 100px auto 0;
+    padding: 10px;
+}
+
+/* préfixe par navigateur
+beaucoup de propriétés CSS3 nécessitent un préfixe afin de pouvoir fonctionner
+
+-webkit : chrome & safari
+-moz : FF3.6+
+-o : opéra
+-ms : IE
+
+background: linear-gradient (la direction, couleur1 50%, couleur2 50%);
+*/
+
+.contenu4 {
+    width: 600px;
+    height:400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.contenu5 {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.contenu5 p {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    height: 40px;
+}
+
+.contenu5:hover p{
+    top: -50px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}

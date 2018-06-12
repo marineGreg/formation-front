@@ -1,0 +1,38 @@
+/* VH VISUAL HEIGHT et VW VISUAL WIDTH permet d'avoir des hauteurs ou des largeurs en pourcentage pour les navigateurs récents */
+#conteneur{
+    width: 80%;
+    border: 1px solid;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: 1.2vw; /*vw spécifie une mesure en fonction de la taille de la fenêtre */
+}
+header{
+    background: red;
+    height: 15vh;
+}
+p{
+    margin: 0;
+}
+nav{
+    background: blue;
+    height: 5vh;
+}
+section{
+    display: flex;
+    margin: 2%;
+    flex-wrap: wrap;
+}
+.block{
+    width: 50%;
+    height: 28vh;
+}
+.a{ background: blueviolet;}
+.b{ background: yellow;}
+.c{ background: green;}
+.d{ background: grey;}
+footer{
+    height: 7.5vh;
+    background: red;
+}
+
+/* En responsive fluide, on constate que le design originel ne change pas mais que chaque zone s'adapte en % à la largeur de la fenêtre. on en déduit donc faciement qu'il est limité et ne nous permettra pas tout seul de pouvoir obtenir sur certains devices (tablette, smartphone) un design ergonomique pour l'expérience utilisateur */ 

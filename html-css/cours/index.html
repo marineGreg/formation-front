@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- COMMENTAIRE -->
+<!-- DOCTYPE c'est ce qui permet de définir le type de document attendu -->
+<html>
+<head> <!-- en-tête du document, non visible sur le navigateur, mais utilisé afin de charger 
+    des liens, des favicons, des metas...  -->
+    <meta charset="UTF-8"> <!-- meta, permet de définir l'encodage du document -->
+    <meta name="keyword" content="mot clé1, mot clé2, etc" /> <!-- meta keyword, balise de mot clé -->
+    <meta name="author" content="Nom Prénom" /> <!-- meta author, balise permettant de définir 
+    l'auteur du document -->
+    <meta="description" content="phrase de description" /> <!-- meta description, meta permettant de définir 
+    une description pour le document -->
+    <title>Structure HTML 5</title> <!-- titre du document, apparait dans l'onglet du navigateur et aussi 
+    utilisé pour le référencement -->
+    <link rel="stylesheet" href="css/style.css"> <!-- balise link permettant d'appeler : du CSS, une favicon etc -->
+</head>
+<body>
+    
+    <header>
+        <p>header</p>
+        <!-- zone du haut, ex : bannière, logo, slogan, liens réseaux sociaux -->
+    </header>
+
+    <nav>
+        <p>nav</p>
+        <!-- zone du menu, ex : lien pour naviguer sur le site -->
+    </nav>
+
+    <main>
+        <p>main</p>
+        <!-- zone principale de la page, ce situant entre le header et le footer -->
+            <section>
+                <p>section</p>
+                <!-- zone de contenu : titre, texte, information de contenu, regroupement thématique 
+                de contenu -->
+                <div>
+                    <p>div</p>
+                    <!-- zone supplémentaire de contenu, l'élément div peut regrouper tout et n'importe
+                    quoi, alors que l'élément section a plutot été pensé pour regrouper du contenu 
+                    apparenté -->
+                </div>
+                <span>
+                    <p>span</p>
+                    <!-- élément span peut aussi regrouper tout et n'importe quoi, il ne s'agit que d'une zone
+                    secondaire d'information -->
+                </span>
+            </section>
+
+            <article>
+                <p>article</p>
+                <!-- zone de contenu de texte -->
+            </article>
+    </main>        
+        <footer>
+            <p>footer</p>
+            <!-- zone du bas, ex : lien administratif, mentions légales, plan du site, CGU, CGV, contact, Copyright -->
+        </footer>
+</body>
+</html>

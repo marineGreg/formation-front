@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+</head>
+<body>
+    <!-- Header contenant 2 sections : Logo et la Nav -->
+    <header>
+        <section class="left-menu">
+            <h1 class="logo">MyUnicorn</h1>
+        </section>
+        <section class="right-menu">
+            <nav>
+                <div class="principe"><a href=index.html?#principe>LE PRINCIPE</a></div>
+                <div class="licornes"><a href=index.html?#licornes>NOS LICORNES</a></div>
+                <div class="contact"><a href=index.html?#contact>NOUS TROUVER</a></div>
+            </nav>
+        </section>     
+    </header>
+
+    <!-- Le main contient le top-main, correspondant à l'en-tête titre de la page, et une section que j'ai appelé center, pour désigné le bloc contenant les informations proposées dans la nav -->
+    <main>
+        <section class="top-main">
+            <h1 class="top-title">Un jour, une licorne</h1>
+        </section>
+        
+        <section class="center">
+            <article>
+                <h2 id="principe"><i class="far fa-star"></i> Le Principe</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
+                <p>Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p><br><br>
+            </article>
+
+            <h2 id="licornes"><i class="far fa-star"></i> Nos Licornes</h2>
+            <section class="licornes">
+                <figure class="photo">
+                    <img src="img/unicorns/photo1.jpg" alt="Lulu Confetty">
+                    <figcaption>Lulu Confetty</figcaption>
+                </figure>
+                <figure class="photo">
+                    <img src="img/unicorns/photo2.jpg" alt="Lapillon Magik">
+                    <figcaption>Lapillon Magik</figcaption>
+                </figure>
+                <figure class="photo">
+                    <img src="img/unicorns/photo3.jpg" alt="El Ninjacorn">
+                    <figcaption>El Ninjacorn</figcaption>
+                </figure>
+                <figure class="photo">
+                    <img src="img/unicorns/photo4.jpg" alt="Sweety Candy">
+                    <figcaption>Sweety Candy</figcaption>
+                </figure>
+            </section>
+                <br><br>
+
+            <h2 id="contact"><i class="far fa-star"></i> Nous trouver</h2><br>
+            <section class="contact">
+                <div class="frame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.187468008759!2d2.354114115352438!3d48.854635479287154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671fd10fa77a9%3A0xb2bbd365849898f2!2sWebforce3!5e0!3m2!1sfr!2sfr!4v1526892826090" width="650" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <div class="bottom-right">
+                    <div class="adresse">
+                        <h4>Notre élevage de licornes est situé au :</h4>
+                            18 Rue Geoffroy l'Asnier <br>
+                            75004 Paris <br>
+                            01.23.45.67.89
+                    </div>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+                        <form action="newsletter.php" method="post" enctype="multipart/form-data">
+                            <input type="email" class="email" name="email" placeholder="votre@email.fr" required><br><br>
+                            <input type="submit" class="button" name="valider" value="Valider">
+                        </form>
+                    </div>
+                </div>
+            </section>    
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">2016 © WebForce3</div>
+    </footer>
+
+</body>
+</html>

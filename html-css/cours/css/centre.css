@@ -1,0 +1,18 @@
+#conteneur {
+    width: 960px;
+    background: lightpink;
+    margin: 0 auto; /* comme on a défini la largeur, auto permettra de centrer la div */
+    padding: 30px; /* espace interne du conteneur */
+}
+
+.a, .b {
+    height: 150px;
+    width: 450px;
+    border: 2px solid rebeccapurple;
+    margin: 0 10px; /* espacement horizontal entre les blocs */
+    display: inline-block; /* inline block rend le vertical align possible */
+    vertical-align: middle;
+}
+
+/* A partir du moment où vous connaissez la largeur d'un parent, vous pouvez centrer un élément enfant (voire plusieurs) à l'aide du "margin: 0 auto;"
+/!\ ATTENTION : L'élement devra être de type block voir inline-block */

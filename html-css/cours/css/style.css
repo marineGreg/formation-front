@@ -1,0 +1,31 @@
+body {
+    background: #f3256a;
+    /* background permet de définir un fond de couleur pour la page */
+}
+header, footer {
+    height: 100px; /* hauteur */ 
+    background: #f98f32;
+}
+nav {
+    height: 40px;
+    background: #20ddf2;
+}
+main {
+    min-height: 800px; /* min-height permet de définir la hauteur minimum d'un élément, sans pour autant définir sa taille finale */
+}
+section {
+    height: 400px;
+    background: #f2f220;
+}
+div {
+    width: 100px; /*largeur*/
+    height: 100px;
+    background: brown;
+}
+span {
+    background: lawngreen;
+    display: block;
+}
+main {
+    background : #966fd8;
+}

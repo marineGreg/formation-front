@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/absolute.css" />
+</head>
+<body>
+    <!-- 
+    Position absolute
+    Son positionnement est relatif à l'élément parent positionné le plus proche au lieu d'être relatif à la fenêtre du navigateur. Si un élément positionné en absolute n'a aucun élément parent positionné, il utilise alors le corps du document (body) et se déplace avec le document au défilement de la page.
+    Un élément positionné est un élément dont la position est tout sauf "static"
+
+    Par défaut, tout élément en HTML est positionné avec une "position: static"
+    
+    -->
+
+    <!-- Nous avons 2 div imbriquées avec à l'interieur de la dernière, un paragraphe     en position absolute
+
+        Par défaut, un élément en position absolute va se positionner par rapport à son parent le plus proche (celui ayant comme position: "relative", "fixed", etc...) En l'occurence ici, le body.
+
+        Afin de pouvoir positionner le paragraphe par rapport à l'élement ayant la class ".test" ou "test1", il faudra alors rajouter à ".test" ou ".test1" l'attribu css suivant "position: relative". De ce fait l'élément le plus proche du paragraphe étant en absolute, deviendra le parent de ce paragraphe. Le positionnement top, left, right, bottom, sera de nous pris en compte via ce parent.
+
+        exemple : si p.orange est à top 50% et left 0, par défaut il sera fixé sur la page à 50% du haut et collé à gauche. Si .test1 venait à pendre la position relative, alors p.orange sera dans ce cas placé à 50% du haut de l'élément test1 collé au côté gauche de test1 car test1 deviendrait le parent
+    -->
+    <div class="test">
+        <div class="test1">
+            <p class="orange">Hello !</p>
+        </div>
+    </div>
+
+    <div class="conteneur">
+        <span class="retour">flèche haut</span>
+        <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id voluptatibus quod officiis provident eaque autem dolorem minima neque sunt porro laborum repellendus labore magni recusandae deserunt ea accusantium ut iste, fugiat totam tempore facilis! Mollitia placeat, repudiandae inventore quidem nisi natus dolorem eum repellat autem ab accusantium quibusdam quisquam blanditiis dolore facere vitae voluptatibus quaerat provident deleniti aliquam rem hic quasi labore ullam! Qui, assumenda vero praesentium, cumque iure aut similique neque enim asperiores ipsam maiores aspernatur nobis perspiciatis ab unde quia sit minus quasi vel omnis a illum recusandae esse molestiae! Dolores quasi odit eum sunt laudantium, nemo id suscipit cumque porro a tenetur eligendi corporis corrupti, nostrum veritatis reprehenderit facere obcaecati laborum ipsam magnam sint quae possimus distinctio. Ea ad ullam magni magnam, soluta quis alias officia itaque doloribus voluptate aliquam tenetur necessitatibus sed dolores minima, pariatur tempore facilis aspernatur adipisci? Quod ex molestiae iusto molestias itaque suscipit ducimus commodi dolorum rem labore dolores dolor hic deleniti, repellendus veniam vero qui maiores? Odio beatae velit ut culpa commodi est! Dolores numquam harum illo incidunt consectetur dicta nobis dignissimos eaque! Cum dignissimos quas architecto porro illum repudiandae atque animi laboriosam quibusdam excepturi sunt dolorem vel perferendis perspiciatis cupiditate aliquam harum adipisci, voluptates fugiat tenetur fugit, voluptatem impedit. Ratione tempore repellat saepe quod sit, mollitia tempora vel, provident, unde fugit suscipit ad.</p>
+
+        <p class="text2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus minus sint iusto rem eaque perspiciatis, quos provident vitae laudantium suscipit autem maiores ab optio possimus facere odit voluptatem repellendus sapiente repellat, assumenda magnam quidem ea praesentium? Quidem, nisi dicta. Ullam ab, nisi laboriosam dignissimos doloremque asperiores. Perspiciatis est quasi dolores harum ab, quis eveniet vero recusandae porro fugiat magnam autem amet consequuntur accusamus quos ex odit! Veritatis minus nostrum expedita debitis aliquid architecto id. Facere inventore ex in perspiciatis harum vero rem. Velit at dignissimos iusto rerum nihil adipisci laboriosam cumque magni ducimus blanditiis sunt quaerat error aliquid mollitia earum ipsa ipsum, modi quis voluptatibus. Porro asperiores vel minima quisquam quibusdam quasi perferendis atque excepturi suscipit dolore adipisci distinctio optio commodi laboriosam iusto obcaecati, minus nemo dicta esse dolorem aperiam eos! Eveniet alias excepturi neque nulla nemo hic consectetur rerum quae obcaecati quidem fugiat eum doloribus ad consequuntur, natus suscipit ipsam saepe. Ducimus, rerum laborum? Et laborum, corrupti dolores vel distinctio labore possimus eos tenetur corporis incidunt quis modi ut velit ratione deserunt excepturi, voluptates eligendi quo exercitationem quae autem, vero aut odit. Itaque, laudantium magnam illo atque maxime repellat!</p>
+
+        <p class="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora qui recusandae explicabo excepturi alias reiciendis repudiandae! Quibusdam, voluptates quidem ea eum debitis fuga, omnis modi officiis autem dolor qui dolore facilis fugiat? Maxime error odio perspiciatis. Error dicta voluptas incidunt quas, nulla neque harum beatae consequatur vero non recusandae explicabo hic minima sed dolorum quidem omnis rem quaerat accusamus, commodi, accusantium voluptatibus? Maiores eum voluptatibus animi omnis nemo tenetur nihil aliquam fugiat et sit nesciunt harum hic sequi distinctio esse, consequuntur recusandae aut adipisci deleniti ipsum mollitia dolorum molestiae explicabo? Quo nihil aliquid sed distinctio architecto adipisci quas error accusamus est enim libero dolores reiciendis deleniti eius nemo quibusdam magni iure, veniam nulla provident perspiciatis labore non! Fugiat aliquam delectus aperiam atque cumque aliquid. Sed animi, eaque quis officia facere temporibus earum est itaque cumque quae optio voluptas aliquid similique reprehenderit fuga consequatur beatae fugit cum voluptate maxime rem sit deserunt enim qui. Ratione aliquid mollitia quibusdam. Ipsum fugiat incidunt corrupti aspernatur harum voluptas ratione, error similique obcaecati, voluptates quis culpa tempore debitis, provident ea impedit perspiciatis? Eveniet vitae eius veritatis non esse excepturi vero blanditiis optio nam nesciunt, facilis molestiae aut animi accusantium, quisquam commodi saepe pariatur et incidunt fuga laborum omnis quas a soluta.</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li class="acc">accueil</li>
+            <li class="port">portfolio</li>
+            <li class="news">news</li>
+                <div class="news-block">
+                    <ul>
+                        <li>test1</li>
+                        <li>test2</li>
+                        <li>test3</li>
+                        <li>test4</li>
+                    </ul>
+                </div>
+            <li class="contact">contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+header {
+    height: 80px;
+    background: teal;
+}
+
+nav {
+    height: 30px;
+    background: purple;
+}
+
+.s1, .s2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s1 {
+    padding-top: 5%;
+}
+
+.s2 {
+    padding-bottom: 5%;
+}
+
+footer {
+    height: 60px;
+    background: teal;
+}
+
+.a, .b, .c, .d {
+    width: 50%;
+    height: 250px;
+}
+
+.a {
+    background: indigo;
+}
+
+.b {
+    background: lightcoral;
+}
+
+.c {
+    background: lightseagreen;
+}
+
+.d {
+    background: lightgoldenrodyellow;
+}

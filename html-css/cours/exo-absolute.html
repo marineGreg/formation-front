@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/exo-absolute.css" />
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Bienvenue sur l'exemple de position absolute</h1>
+            <article>
+                <header>
+                    <p>
+                        <h2>Article 1</h2>
+                        auteur: <span>Utilisateur
+                                    <div class="info-uti">
+                                        <p>Nom : Marine</p>
+                                        <p>Ville : Paris</p>
+                                        <p>CP : 75003</p>
+                                    </div>
+                                </span><br>
+                        date: 16-05-2018
+                    </p>
+                </header>
+                <hr>
+                <section>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum perspiciatis nam provident nostrum accusamus dolorem ipsum officia. Doloremque debitis temporibus minus dicta excepturi nobis eveniet quae tenetur minima tempore.
+                    </p>
+                </section>
+                <hr>
+                <footer>
+                    <p> Commentaire: (<span>1</span>)</p>
+                    <div class="com">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur, molestiae quas recusandae fuga consequatur.
+                        </p>
+                    </div>
+                </footer>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
+
+<!-- Ici nous avons 2 articles, en passant la souris sur le nom d'utilisateur, une         fenêtre d'information associée à l'utilisateur va apparaitre en position             absolute.
+    Ce cadre ne détruit pas la mise en forme déjà présente mais vient passer par dessus afin de s'afficher. c'est le principe d'un élément en absolu.
+
+    Par défaut le parent le plus proche de l'élément ayant la class ".info-uti" et étant en valeur absolue est le corps de la page. afin d'y remédier, nous rajoutons la propriété css position:relative au header afin qu'il devienne le parent le plus proche 
+
+    De ce fait, le calcul du décalage TOP et LEFT sera désormais redéfini à partir du header et nom du body
+-->

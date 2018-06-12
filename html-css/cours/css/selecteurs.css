@@ -1,0 +1,53 @@
+p { color: red; } /* tous les éléments p auront une couleur rouge*/
+p:first-child { color: green; } /* premier élément p de la page générale ou premier élément p d'un parent -css3 */
+p:last-child { color: green; } /* dernier élément p - css3 */
+p:nth-child(even) { color: blue; } /* élément pair - css3 */
+p:nth-child(odd) { color: brown; } /* élément impair - css3 */
+p:nth-child(5), p:nth-child(6) { color: orange; } /* éléments précis n°5 et n°6 - css3 */
+div:not(.zoneB) { font-weight: bold; } /* toutes les div sauf la zone B - not() - css3 */
+
+.zoneA {
+    color: #f66f66;
+}
+.zoneB {
+    color: #996633;
+}
+.couleurBleu{
+    color: #336699;
+}
+#zoneC {
+    color: #98f32f;
+}
+#zoneC:after {
+    content: "X"; /* possibilité de mettre du contenu dans le html via la feuille css, cela est généralement utilisé pour des codes d'icones */
+}
+#zoneD span{
+    color: #32ff32;
+}
+
+/* L'utilisation des childs n'est pas très rassurant dans le cas où le code HTML serait amené à évoluer. il est préférable de favoriser l'utilisation des class et des id.
+
+Une class se déclare dans le document html pour cibler un élément, cela s'utilise ensuite dans le css pour y apporter un style spécifique.
+
+Différence entre class et id : 
+    une class est appelée en css par un point "."
+    un id est appelé en css par un hashtag "#"
+Le W3C recommande d'utiliser les id une seule fois par page web pour des zones principales et des classes (une ou plusieurs fois) pour tout le reste (Cependant, cela n'est pas une obligation).
+
+-------------------------------
+
+Plusieurs moyens de styliser un élément : 
+    par son id : #elem
+    par sa class : .elem
+    par sa balise : balise
+    par sa balise et le numéro : balise:nth-child(1)
+
+-------------------------------
+
+Règle d'écriture :
+    div.zone{} veut dire "va me chercher la div qui possède la class 'zone'".
+    dive .zone{} veut dire "va me chercher la class zone qui se trouve A L'INTERIEUR de la div (c'est l'espace qui change la signification).
+    .maclass, maclass2{] : il y a des virgules, on applique le style sur plusieurs éléments.
+
+-------------------------------
+*/

@@ -1,0 +1,28 @@
+.rouge {
+    background: red;
+    min-height: 60px;
+}
+.bleu {
+    background: blue;
+    min-height: 60px;
+}
+.marron {
+    background: maroon;
+    min-height: 60px;
+}
+.noir {
+    background: black;
+    min-height: 60px;
+}
+.jaune {
+    background: goldenrod;
+    min-height: 60px;
+}
+
+.container-fluid {
+    border: 2px solid black;
+}
+
+.container-fluid:hover .rouge {
+    background: green;
+}

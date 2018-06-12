@@ -1,0 +1,3 @@
+ul, ol {
+    list-style: none; /* --> Pour supprimer les puces et numéros des listes */
+}

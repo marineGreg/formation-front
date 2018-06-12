@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    background: #686868;
+}
+
+.diva, #test {
+    width: 600px;
+    height: 60px;
+    background: #888fee;
+}
+
+.diva span {
+    padding: 20px;
+    width: 200px;
+    background: #966fd8;
+    display: block;
+}
+
+#test {
+    margin: 20px 0 50px 30px;
+    background: #448863
+}
+
+/* ---------------------------*/
+
+.job {
+    background: red;
+    padding: 20px;
+    font-size: 20px;
+}
+
+hr {
+    min-height: 20px;
+}

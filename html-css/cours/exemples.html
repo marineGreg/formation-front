@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/exemples.css" />
+</head>
+<body>
+    <!-- exemple span -->
+    
+    <!-- 
+        Tout d'abord, j'ai créé 2 paragraphes, je leur ai appliqué une class "non commune" afin de pouvoir définir des propriétés différentes sur les span à l'intérieur de ces paragraphes : "titi" et "toto"
+    
+        En faisant cela, j'ai pu personnaliser les span à l'intérieur en appelant le parent puis l'élément à personnaliser : ".titi span" et ".toto span" 
+        
+        Le span s'utilise en dernier recours, quand aucune autre balise de la sémantique n'est disponible. Il s'utilise principalement pour personnaliser du contenu textuel ou des liens, des listes, des titres, etc...
+    -->
+
+    <p class="titi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolores iusto fugiat, minima laboriosam corrupti ipsum harum exercitationem odio, illo nulla quidem magnam impedit inventore, fugit aspernatur praesentium eos rerum vitae aut pariatur repudiandae sint? <span>Dolorem soluta amet eum, autem assumenda enim cupiditate exercitationem tempora veritatis dolor.</span> Optio explicabo omnis amet animi corporis magni impedit velit molestiae, beatae, maiores commodi doloribus, magnam aut. Sequi odio doloremque sunt a ipsum beatae officiis magni provident totam iusto! Consectetur nostrum reiciendis alias, labore voluptatem, nesciunt quae nemo <span>similique</span> quasi voluptas dicta at doloremque culpa? Doloribus veritatis facere reiciendis iure obcaecati aliquid ipsum soluta!</p>
+
+    <p class="toto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolores iusto fugiat, minima laboriosam corrupti ipsum harum exercitationem odio, illo nulla quidem magnam impedit inventore, fugit aspernatur praesentium eos rerum vitae aut pariatur repudiandae sint? <span>Dolorem soluta amet eum, autem assumenda enim cupiditate exercitationem tempora veritatis dolor.</span> Optio explicabo omnis amet animi corporis magni impedit velit molestiae, beatae, maiores commodi doloribus, magnam aut. Sequi odio doloremque sunt a ipsum beatae officiis magni provident totam iusto! Consectetur nostrum reiciendis alias, labore voluptatem, <span>nesciunt</span> quae nemo similique quasi voluptas dicta at doloremque culpa? Doloribus veritatis facere reiciendis iure obcaecati aliquid ipsum soluta!</p>
+
+    <h1><span class="test1">B</span>ienvenue <span class="test2">s</span>ur <span class="test3">m</span>on <span class="test4">s</span>ite</h1>
+   
+    <!-- fin exemple span -->
+
+    <!-- exemple div -->
+
+    <!-- 
+        Nous avons une div et un article, qui sont tous les deux des conteneurs de type block. A ces deux conteneurs, nous avons rajouté une class commune : "shadowbox"
+
+        De ce fait, les deux balises, div et articles récupèrent les propriétés de la class ".shadowbox" sans pourtant être le même conteneur
+
+        Il est possible d'avoir une div dans une balise article, cependant, il est peu probable de retrouver une balise article dans une div
+
+        Il sera cependant possible d'avoir plusieurs balises articles à l'intérieur d'une balise section
+
+        Dans notre exemple, il serait cependant possible de personnaliser les paragraphes contenus à l'intérieur des balises div ou article grâce à la class shadowbox
+    -->
+
+    <div class="shadowbox">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, dolore! Commodi, ipsum porro! Blanditiis illo consequatur aperiam dolore itaque explicabo.
+        </p>
+    </div>
+    <article class="shadowbox">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate amet numquam sequi debitis possimus repellat ipsa. Nam, perspiciatis nesciunt, dignissimos recusandae et fuga dolorum quibusdam culpa laborum sed voluptatibus?
+            </p>
+    </article>
+    <!-- Un élément html peut recevoir plusieurs class 
+        exemple : <div class="class1, class2, class3"> -->
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+    <!-- En html, il est possible de créer des formulaires: de contact, de connexion, d'inscription... -->
+    
+    <!-- pou déclarer un formulaire, on utilise la balise <form></form> 
+    on y trouve à l'intérieur, plusieurs balises fréquemment utilisées : <label></label>, <input></input>, <select></select>, <textarea></textarea> -->
+    
+    <!-- le label sert à indiquer à l'utilisateur ce qu'il doit remplir dans l'input associé -->
+    <!-- le input sert de champ de saisie pour l'utilisateur (saisie: password, texte, tel, date, etc) -->
+    <!-- Cependant un de ces input ou <button></button> sert à soumettre ou réinitialiser le formulaire -->
+
+    <form action="" method="" enctype="multipart/form-data">
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" name="pseudo" placeholder="Entrer le pseudo"><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Entrer le mot de passe" required><br>
+
+        <label for="email">email</label>
+        <input type="email" name="email" placeholder="Entrer l'email"><br>
+
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar"><br>
+
+        <p>
+        <label for="choix">Quels sont vos fruits préférés ?</label>
+        <input type="checkbox" id="choix" name="choix" checked>Orange
+        <input type="checkbox" id="choix" name="choix">Fraise
+        <input type="checkbox" id="choix" name="choix">Poire
+        </p>
+
+        <label for="pays">Pays</label>
+            <select name="pays" id="pays">
+                <option value="fr">France</option>
+                <option value="it">Italie</option>
+                <option value="es" selected>Espagne</option>
+            </select>
+
+        <p><label for="civilité">Civilité</label>
+            <input type="radio" id="civilite" name="civilite" value="m" checked>Homme
+            <input type="radio" id="civilite" name="civilite" value="f">Femme</p><br>
+        
+        <label for="adresse">Adresse</label><br>
+        <textarea name="adresse" id="adresse" cols="25" rows="5"></textarea><br>
+
+        <label for="cp">Code Postal</label>
+        <input type="text" name="cp" id="cp" maxlength="5" pattern="[0-9]{5}" title="5 chiffres requis entre 0 et 9">
+        
+        <input type="submit" name="envoyer" value="Envoyer">
+    </form>
+</body>
+</html>
+
+<!--
+    method = comment vont circuler les données : "post"(traité php ou js) ou "get"(dans l'url). si non renseigné, les données circulent par défaut en get.
+
+    action = url de destination (si laissé vide, renvoi vers sa propre page)
+    enctype="multipart/form-data" = obligatoire de le renseigner si vous souhaitez envoyer des fichiers
+
+    label = étiquette(indication)
+        for = nom relié à l'id
+    textarea = zone de saisie
+    rows = vertical, cols = horizontal
+
+    input = élément du formulaire, il possède plusieurs types
+        id = nom relié au for
+        type = texte - case de saisie
+        type = password - case de saisie cryptée
+        type = email - case de saisie au format email
+        type = submit - bouton d'envoi
+        type = file - upload de fichier
+        type = checkbox - case à cocher (permet une séléction multiple)
+        type = radio - case à cocher (unique)
+        type = hidden - champ caché
+        list = permet de s'alimenter de suggestions avec une liste
+        name = nom pour futur récupération en PHP
+        required = permet de rendre le champ obligatoire (éviter de mettre un champ téléphone obligatoire)
+        disabled = désactive la saisie dans le champ
+        readonly = lecture seulement
+        placeholder = indication de présaisie
+        maxlength = longueur maximum
+        pattern = expression régulière avec liste de caractères autorisés - title permet de personnaliser le message d'erreur dans l'infobulle
+        select = liste déroulante
+        option = option
+        multiple = permet de faire passer une liste déroulante en choix multiples
+        datalist = contient la liste d'option en cas de suggestion demandée avec l'attribut list
+
+        novalidate = permet de désactiver la vérification par le navigateur
+-->

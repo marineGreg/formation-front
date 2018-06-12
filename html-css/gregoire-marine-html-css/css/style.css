@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    background: url(../img/background.png) repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courgette', cursive;
+    color: #EB43A3;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* ---------- H E A D E R ---------- */
+
+header {
+    background: #C55394;
+    height: 80px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-top: 0px;
+}
+
+.left-menu {
+    margin-left: 20px;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+}
+
+nav div {
+    padding: 33px 15px;
+}
+
+nav div:hover { 
+    background: #EB43A3; /* effet de hover du menu */
+}
+
+/* ---------- C O N T E N U ---------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 1550px;
+}
+
+main h2 {
+    font-size: 1.6em;
+    width: 100%;
+}
+
+.top-main {
+    height: 300px;
+    background: url(../img/rainbow.png) no-repeat center;
+    text-align: center;
+}
+
+.top-title {
+    margin: 100px;
+    color: #C55394;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.center {
+    margin: -105px auto;
+    width: 65%;
+    height: 1250px;
+    background: #ffffff;
+    box-shadow: 2px 0px 20px grey;
+    border-radius: 1%;
+    padding: 20px;
+}
+
+.far {
+    font-size: 0.9em;
+    color: #EB43A3;
+}
+
+/* ----- NOS LICORNES ----- */
+
+figure {
+    margin: 0;
+}
+
+.licornes, .contact {
+    display: flex;
+}
+
+.photo {
+    padding: 10px;
+}
+
+img {
+    width: 98%;
+}
+
+figcaption {
+    width: 98%;
+    background: rgba(0, 0, 0, 0.8);
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ----- NOUS TROUVER ----- */
+
+.bottom-right {
+    padding: 20px;
+}
+
+.email {
+    padding: 6px;
+}
+
+.button {
+    padding: 6px;
+    background: #C55394;
+    border: 1px solid #EB43A3;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+h4 {
+    color: #C55394;
+    font-weight: bold;
+}
+
+
+
+/* ---------- F O O T E R ---------- */
+
+footer {
+    background: #C55394;
+    height: 60px;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copyright {
+    align-self: center;
+}
