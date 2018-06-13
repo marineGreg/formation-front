@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo|Syncopate">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    
 </head>
 <body>
     <header id="home">
@@ -14,7 +16,7 @@
             <h1>MARINE GREGOIRE</h1>
             <p>PARIS</p>
         <!-- M E N U -->
-            <nav>
+            <nav id="navbar">
                 <ul>
                     <li class="home"><a href="#home">HOME</a></li>
                     <li class="work"><a href="#work">WORK</a></li>
@@ -25,23 +27,23 @@
     </header>
 
         <!-- C O N T E N U -->
-    <main id="work">
-        <section class="project1">
+    <main class="content">
+        <section class="work-left">
             <div class="demo1">
-                <span><img src="img/website1.jpg" alt="Website 1" title="Website 1"/></span>
+                <span><img src="http://via.placeholder.com/400x350" alt="Website 1" title="Website 1"/></span>
             </div>
             <div class="dev1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maiores vitae enim! Cumque doloribus quidem a quae, ab nobis dicta.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </section>
-        <section class="project2">
-                <div class="dev2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maiores vitae enim! Cumque doloribus quidem a quae, ab nobis dicta.</p>
-                </div>
-                <div class="demo2">
-                        <span><img src="img/website1.jpg" alt="Website 2" title="Website 2"/></span>
-                </div>
-            </section>
+        <section class="work-right">
+            <div class="dev2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="demo2">
+                <span><img src="http://via.placeholder.com/400x350" alt="Website 2" title="Website 2"/></span>
+            </div>
+        </section>
 
         <!-- A B O U T   M E -->
 
@@ -77,6 +79,20 @@
         </section>
 
     </main>
+    <script>
+        var stickymenu = document.getElementById("navbar")
+        var stickymenuoffset = stickymenu.offsetTop
 
+    window.addEventListener("scroll", function(e){
+        requestAnimationFrame(function(){
+            if (window.pageYOffset > stickymenuoffset){
+            navbar.classList.add('sticky')
+            }
+            else{
+            navbar.classList.remove('sticky')
+            }
+        })
+    })
+        </script>
 </body>
 </html>

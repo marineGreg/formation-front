@@ -9,16 +9,14 @@ html, body, a {
 /* ------------ H E A D E R ----------- */
 
 body {
-    background: #1D4B55 url(../img/teal-copper-tiles.jpg) no-repeat;
+    background: #003F49 url(../img/teal-copper-tiles.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 header {
     color: #fff;
-    height: 790px;
 }
 
 h1 {
@@ -35,7 +33,6 @@ header h2 {
 
 header p {
     text-align: center;
-    -webkit-padding-before: 50px;
     margin: auto;
 }
 
@@ -44,15 +41,13 @@ header p {
 nav {
     display: flex;
     justify-content: space-evenly;
-    padding: 5px;
-    background-color: rgba(203, 141, 113, 0.35);
-    margin-top: 200px;
+    padding: 10px;
+    background-color: rgba(287, 97, 61, 0.37);
+    margin-top: 100px;
     font-weight: bold;
 }
 
 nav ul {
-    flex-direction: row;
-    text-decoration: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -64,48 +59,30 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: rgba(203, 141, 113, 0.9);
-    padding: 5px 20px;
+    background-color: rgba(221, 165, 139, 0.733);
+    padding: 10px 20px;
 }
+
+.sticky {
+    position: fixed;
+    top: -100px;
+    width: 100%;
+  }
 
 /* ------------ C O N T E N T ----------- */
-
-main {
-    background:#1D4B55;
-    height: 1500px;
-}
 
 section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-}
-
-.demo1 {
-    width: 450px;
-    padding: 20px;
-}
-
-.dev1 {
-    width: 400px;
-    padding: 20px;
-}
-
-.demo2 {
-    width: 450px;
-    padding: 20px;
-}
-
-.dev2 {
-    width: 400px;
-    padding: 20px;
+    margin-top: 100px;
 }
 
 /* ------------ A B O U T   M E ----------- */
 
 #about {
-    background: rgba(203, 141, 113, 0.9);
+    background: #FFBA9E;
     color :#10232A;
     display: flex;
     justify-content: space-around;
@@ -121,8 +98,7 @@ section {
 }
 
 img {
-    width: 70%;
-    border-radius: 20%;
+    border-radius: 10%;
 }
 
 /* ------------ C O N T A C T   F O R M ----------- */
@@ -136,9 +112,15 @@ img {
 }
 
 #contact input:focus {
-    background-color: rgb(226, 158, 126);
+    background-color: #FFBA9F;
+    color: #fff;
 }
 
 #contact textarea:focus {
-    background-color: rgb(226, 158, 126);
+    background-color: #FFBA9F;
+    color: #fff;
 }
+
+.submitButton{
+    width: 108%;
+  }
