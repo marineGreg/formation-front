@@ -1,0 +1,74 @@
+a, h1, h2, h3, h4, h5{
+    font-family: 'Merienda', sans-serif;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+/* ------ H E A D E R ------ */
+.top-title {
+    font-size: 2em;
+    color: #fff;
+}
+
+h2, h3, h4, h5 {
+    color: #2F4073;
+}
+
+.top {
+    height: 11em;
+    background: #B9CDFF url(../img/background.jpg);
+    color: #fff;
+    text-shadow: 2px 2px 2px #272727  ;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------ F O R M  +  C A R O U S E L ------ */
+.middle {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.middle h5 {
+    text-align: center;
+}
+
+form {
+    border: 1px solid #DDDDDD;
+    padding: 1em;
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px #272727;
+}
+
+/* ------ B O T T O M ------ */
+.bottom {
+    display: flex;
+    background: #DDDDDD;
+    flex-wrap: wrap;
+}
+
+.bottom-left {
+    padding: 2em;
+}
+
+.tete-chat {
+    width:67%;
+    background: #7885A5;
+    align-items: center;
+}
+
+.tete-chat:hover {
+    background: #061339;
+}
+
+footer p {
+    color: #fff;
+    text-align: end;    
+}
