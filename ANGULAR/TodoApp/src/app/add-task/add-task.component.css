@@ -1,0 +1,9 @@
+.is-invalid {
+  border-color: #17a2b8;
+  border-width: 3px;
+}
+
+.is-invalid:focus {
+  border-color: #17a2b8;
+  border-width: 3px;
+}
