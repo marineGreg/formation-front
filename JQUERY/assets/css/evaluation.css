@@ -62,6 +62,7 @@ form {
     width:67%;
     background: #7885A5;
     align-items: center;
+    transition: 0.7s;
 }
 
 .tete-chat:hover {

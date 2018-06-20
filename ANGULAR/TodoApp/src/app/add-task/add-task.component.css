@@ -1,9 +1,15 @@
 .is-invalid {
-  border-color: #17a2b8;
+  border-color: #b0cad0;
   border-width: 3px;
 }
 
 .is-invalid:focus {
-  border-color: #17a2b8;
+  border-color: #b0cad0;
   border-width: 3px;
+}
+
+.btn-outline-light:hover {
+  color: #212529;
+  background-color: #d7e5e8;
+  border-color: #d7e5e8;
 }

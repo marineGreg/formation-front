@@ -5,7 +5,7 @@ body{
 .todolist{
   padding:20px 20px 10px 20px;
   margin-top:30px;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Dekko', cursive;
   font-size: 1.3rem;
 }
 .todolist h1{
@@ -15,11 +15,11 @@ body{
 }
 
 li.ui-state-default{
-  background-image:linear-gradient(360deg, #E2F3F6, #FFFFFF);
+  background-image:linear-gradient(360deg, #ebf2f3, #FFFFFF);
   border:none;
   line-height: 33px;
   padding-left: 15px;
-  border-bottom:1px solid #D1ECF1;
+  border-bottom:1px solid #c4d7dc;
 }
 
 li.ui-state-default:last-child{
@@ -31,7 +31,7 @@ li label > input {
 }
 
 .todo-right {
-  background: #F3FAFB;
+  background: #ebf2f3;
 }
 
 .todo-footer{
@@ -41,7 +41,7 @@ li label > input {
 #done-items li{
   padding:10px 0;
   border-bottom:1px solid #ddd;
-  text-decoration:line-through;
+  text-decoration:line-through #105969;
 }
 #done-items li:last-child{
   border-bottom:none;
@@ -54,10 +54,10 @@ header {
 }
 
 .navbar-brand {
-  font-size: 2.7rem;
-  font-family: 'Indie Flower', cursive;
+  font-size: 2.5rem;
+  font-family: 'Gochi Hand', cursive;
 }
 
 .bg-dark {
-  background-color: #32127A!important;
+  background-color: #105969!important;
 }
